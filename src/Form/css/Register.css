@@ -1,0 +1,45 @@
+.register h1{
+    text-align: center;
+}
+
+.form {
+    width: 600px;
+    height: 570px;
+    padding: 30px;
+    position: absolute;
+    background-color: #BCEBF8;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+    margin: auto;
+    border-radius: 15px;
+    border: solid 2px #3a4180;
+}
+
+.register button {
+    border-radius: 7px;
+    border: solid 2px #3a4180;
+    background: rgb(157, 181, 200);
+    padding: 8px 12px;
+    width: 595px;
+    height: 65px;
+    margin-top: 10px;
+}
+
+.textarea {
+    border: 1px solid #ccc;
+	border-radius: 10px;
+	box-shadow: 2px 2px 3px #00008b;
+    font-size: 30px;
+    color: #00008b;
+    width: 575px;
+    height: 55px;
+	padding: 4px 7px;
+    outline: 0;
+    margin-bottom: 30px;
+}
+
+textarea:focus {
+	border-color: #339933;
+}
