@@ -1,5 +1,6 @@
 .register h1{
     text-align: center;
+    margin-top: -10px;
 }
 
 .form {
@@ -23,23 +24,64 @@
     background: rgb(157, 181, 200);
     padding: 8px 12px;
     width: 595px;
-    height: 65px;
+    height: 60px;
     margin-top: 10px;
 }
 
-.textarea {
+.full-textarea {
     border: 1px solid #ccc;
 	border-radius: 10px;
 	box-shadow: 2px 2px 3px #00008b;
-    font-size: 30px;
+    font-size: 23px;
     color: #00008b;
-    width: 575px;
-    height: 55px;
+    width: 580px;
+    height: 50px;
 	padding: 4px 7px;
     outline: 0;
-    margin-bottom: 30px;
+    margin-bottom: 24px;
+}
+.half-textarea {
+    border: 1px solid #ccc;
+	border-radius: 10px;
+	box-shadow: 2px 2px 3px #00008b;
+    font-size: 23px;
+    color: #00008b;
+    width: 250px;
+    height: 50px;
+	padding: 4px 7px;
+    outline: 0;
+    margin-bottom: 24px;
+}
+
+.half-margin-textarea {
+    margin-right: 63px;
+}
+
+.contact-textarea {
+    border: 1px solid #ccc;
+	border-radius: 10px;
+	box-shadow: 2px 2px 3px #00008b;
+    font-size: 23px;
+    color: #00008b;
+    width: 315px;
+    height: 50px;
+	padding: 4px 7px;
+    outline: 0;
+    margin-bottom: 24px;
 }
 
 textarea:focus {
 	border-color: #339933;
+}
+
+.box {
+    width: 200px;
+    height: 55px;
+    font-size: 5px;
+    border: 1px solid #999;
+    font-size: 23px;
+    color: #1c87c9;
+    background-color: #eee;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px #00008b;
 }
