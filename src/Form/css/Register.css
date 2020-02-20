@@ -1,5 +1,7 @@
-.register h1{
+.register div h1{
     text-align: center;
+    font-size: 35px;
+    color: #00008b;
 }
 
 .form {
@@ -7,7 +9,7 @@
     height: 570px;
     padding: 30px;
     position: absolute;
-    background-color: #BCEBF8;
+    background-color:#BCEBF8;
 	top:0;
 	bottom: 0;
 	left: 0;

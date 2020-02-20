@@ -13,7 +13,7 @@ export const Register = () => {
     return (
         <div className='register' style={rootStyle}>
             <div className='form'>
-                <h1 style={{ fontSize: 40, color: '#00008b' }}> SIGN UP </h1>
+                <h1> SIGN UP </h1>
                 <List>
                     <List.Item>
                         <input type='text' name='name' placeholder='Name' class='textarea' />
