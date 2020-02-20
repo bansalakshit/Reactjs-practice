@@ -16,16 +16,25 @@ export const Register = () => {
                 <h1> SIGN UP </h1>
                 <List>
                     <List.Item>
-                        <input type='text' name='name' placeholder='Name' class='textarea' />
+                        <input type='text' name='first' placeholder='Firstname' class='half-textarea half-margin-textarea' required />
+                        <input type='text' name='last' placeholder='Lastname' class='half-textarea' required />
                     </List.Item>
                     <List.Item>
-                        <input type='text' name='email' placeholder='Email Address' class='textarea' />
+                        <input type='email' name='email' placeholder='Email Address' class='full-textarea' required />
                     </List.Item>
                     <List.Item>
-                        <input type='text' name='password' placeholder='Password' class='textarea' />
+                    <input type='number' name='contact' placeholder='Contact No' class='contact-textarea half-margin-textarea' required />
+                        <select class='box' required >
+                            <option value="gender">Gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
                     </List.Item>
                     <List.Item>
-                        <input type='text' name='cpassword' placeholder='Confirm Password' class='textarea' />
+                        <input type='text' name='adhaar' placeholder='Adhaar No' class='full-textarea' required />
+                    </List.Item>
+                    <List.Item>
+                        <input type='text' name='state' placeholder='State' class='full-textarea' required />
                     </List.Item>
                 </List>
                 <button>
