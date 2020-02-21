@@ -76,14 +76,55 @@ textarea:focus {
 	border-color: #339933;
 }
 
-.box {
+.gender-box {
+    background-color: #0563af;
+    color: white;
+    padding: 12px;
     width: 200px;
-    height: 55px;
-    font-size: 5px;
-    border: 1px solid #999;
-    font-size: 23px;
-    color: #1c87c9;
-    background-color: #eee;
-    border-radius: 5px;
-    box-shadow: 2px 2px 3px #00008b;
+    border: none;
+    font-size: 20px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    -webkit-appearance: button;
+    appearance: button;
+    outline: none;
+}
+
+.gender-box:active {
+    background-color: #0563af;
+    color: white;
+    padding: 12px;
+    width: 200px;
+    border: none;
+    font-size: 20px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    -webkit-appearance: button;
+    appearance: button;
+    outline: none;
+}
+
+.state-box {
+    background-color: #0563af;
+    color: white;
+    padding: 12px;
+    width: 580px;
+    border: none;
+    font-size: 20px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    -webkit-appearance: button;
+    appearance: button;
+    outline: none;
+    margin-bottom: 24px;
+}
+
+.state-box:active {
+    background-color: #0563af;
+    color: white;
+    padding: 12px;
+    width: 580px;
+    border: none;
+    font-size: 20px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    -webkit-appearance: button;
+    appearance: button;
+    outline: none;
 }

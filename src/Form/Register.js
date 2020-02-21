@@ -18,6 +18,21 @@ export const Register = () => {
     const [contact, setContact] = useState('')
     const [adhaar, setAdhaar] = useState('')
     const [state, setState] = useState('')
+
+    const handleSubmit = async () => {
+        const object = {
+            firstname,
+            lastname,
+            email,
+            contact,
+            gender,
+            adhaar,
+            state
+        }
+        const result = await axios.post('http://localhost:4000/post', object)
+        console.log(result)
+    }
+
     return (
         <div className='register' style={rootStyle}>
             <div className='form'>
@@ -63,11 +78,12 @@ export const Register = () => {
                         <select
                             value={gender}
                             onChange={e => setGender(e.target.value)}
-                            className='box'
+                            className='gender-box'
                             required >
                             <option value=''>Gender</option>
                             <option value='Male'>Male</option>
                             <option value='Female'>Female</option>
+                            <option value='Others'>Others</option>
                         </select>
                     </List.Item>
                     <List.Item>
@@ -81,33 +97,46 @@ export const Register = () => {
                             required />
                     </List.Item>
                     <List.Item>
-                        <input
+                        <select
                             value={state}
                             onChange={e => setState(e.target.value)}
-                            type='text'
-                            name='state'
-                            placeholder='State'
-                            className='full-textarea'
-                            required />
+                            className='state-box'
+                            required >
+                            <option value=''>States</option>
+                            <option value='Andra Pradesh'>Andra Pradesh</option>
+                            <option value='Arunachal Pradesh'>Arunachal Pradesh</option>
+                            <option value='Assam'>Assam</option>
+                            <option value='Bihar'>Bihar</option>
+                            <option value='Chhattisgarh'>Chhattisgarh</option>
+                            <option value='Goa'>Goa</option>
+                            <option value='Gujarat'>Gujarat</option>
+                            <option value='Haryana'>Haryana</option>
+                            <option value='Himachal Pradesh'>Himachal Pradesh</option>
+                            <option value='Jammu and Kashmir'>Jammu and Kashmir</option>
+                            <option value='Jharkhand'>Jharkhand</option>
+                            <option value='Karnataka'>Karnataka</option>
+                            <option value='Kerala'>Kerala</option>
+                            <option value='Madya Pradesh'>Madya Pradesh</option>
+                            <option value='Maharashtra'>Maharashtra</option>
+                            <option value='Manipur'>Manipur</option>
+                            <option value='Meghalaya'>Meghalaya</option>
+                            <option value='Mizoram'>Mizoram</option>
+                            <option value='Nagaland'>Nagaland</option>
+                            <option value='Orissa'>Orissa</option>
+                            <option value='Others'>Punjab</option>
+                            <option value='Rajasthan'>Rajasthan</option>
+                            <option value='Tamil Nadu'>Tamil Nadu</option>
+                            <option value='Telagana'>Telagana</option>
+                            <option value='Tripura'>Tripura</option>
+                            <option value='Uttaranchal'>Uttaranchal</option>
+                            <option value='Uttar Pradesh'>Uttar Pradesh</option>
+                            <option value='West Bengal'>West Bengal</option>
+                        </select>
                     </List.Item>
                 </List>
                 <button>
                     <Link to='/login' style={{ textDecoration: 'none' }} >
-                        <MenuItem style={{ color: '#00008b', fontSize: 35 }} onClick={e => {
-                            const object = {
-                                firstname,
-                                lastname,
-                                email,
-                                contact,
-                                gender,
-                                adhaar,
-                                state
-                            }
-                            console.log(object)
-                            axios.post('http://localhost:4000', object)
-                            .then(res => console.log('res', res))
-                            .catch(err => console.log(err))
-                        }}>Submit</MenuItem>
+                        <MenuItem style={{ color: '#00008b', fontSize: 35 }} onClick={handleSubmit}>Submit</MenuItem>
                     </Link>
                 </button>
             </div>
