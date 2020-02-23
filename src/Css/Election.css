@@ -1,0 +1,26 @@
+.grid {
+    position: absolute;
+    top: 33%;
+    left: 10%;
+    font-size: 30px;
+    display: grid;
+    grid-template-columns: 250px 350px 300px 300px 300px;
+    grid-row-gap: 65px;
+    padding: 10px;
+}
+
+.grid img {
+    width: 150px;
+    height: 100px
+}
+
+.grid button {
+    width: 180px;
+    height: 70px;
+    background-color: blue;
+    font-size: 25px;
+}
+
+.grid button link {
+    text-decoration: none;
+}

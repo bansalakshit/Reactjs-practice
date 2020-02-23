@@ -1,0 +1,24 @@
+.insta {
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 85%;
+    width: 42px;
+}
+.fb {
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 88.5%;
+    width: 42px;
+}
+.twitter {
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 92%;
+    width: 42px;
+}
+.linkedin {
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 95.5%;
+    width: 42px;
+}

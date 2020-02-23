@@ -1,0 +1,21 @@
+.navv h1 {
+    position: relative;
+    color: blanchedalmond;
+    margin-left: 12%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+}
+
+.navlink {
+    margin-left: 145px;
+    text-decoration: none;
+    font-size: 35px;
+    color: blanchedalmond;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo {
+    position: absolute;
+    width: 9%;
+    top: 17px;
+}

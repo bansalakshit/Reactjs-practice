@@ -1,7 +1,11 @@
-.register div h1{
+body {
+    margin: 0px;
+}
+
+.form h1 {
     text-align: center;
-    font-size: 35px;
-    color: #00008b;
+    font-size: 50px;
+    color: black;
     margin-top: -10px;
 }
 
@@ -10,20 +14,20 @@
     height: 570px;
     padding: 30px;
     position: absolute;
-    background-color:#BCEBF8;
-	top:0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-    margin: auto;
+    top: 16%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border: 2px solid black;
+    margin: 50px auto;
     border-radius: 15px;
-    border: solid 2px #3a4180;
 }
 
-.register button {
+.form button {
     border-radius: 7px;
-    border: solid 2px #3a4180;
-    background: rgb(157, 181, 200);
+    border: solid 2px black;
+    font-size: 35px;
+    background: transparent;
     padding: 8px 12px;
     width: 595px;
     height: 60px;
@@ -31,26 +35,27 @@
 }
 
 .full-textarea {
-    border: 1px solid #ccc;
-	border-radius: 10px;
-	box-shadow: 2px 2px 3px #00008b;
+    border-radius: 10px;
     font-size: 23px;
-    color: #00008b;
+    color: black;
     width: 580px;
+    background: transparent;
+    border: 2px solid black;
     height: 50px;
-	padding: 4px 7px;
+    padding: 4px 7px;
     outline: 0;
     margin-bottom: 24px;
 }
+
 .half-textarea {
-    border: 1px solid #ccc;
-	border-radius: 10px;
-	box-shadow: 2px 2px 3px #00008b;
+    border-radius: 10px;
     font-size: 23px;
-    color: #00008b;
+    color: black;
+    background: transparent;
+    border: 2px solid black;
     width: 250px;
     height: 50px;
-	padding: 4px 7px;
+    padding: 4px 7px;
     outline: 0;
     margin-bottom: 24px;
 }
@@ -60,24 +65,20 @@
 }
 
 .contact-textarea {
-    border: 1px solid #ccc;
-	border-radius: 10px;
-	box-shadow: 2px 2px 3px #00008b;
+    border-radius: 10px;
     font-size: 23px;
-    color: #00008b;
+    color: black;
+    background: transparent;
+    border: 2px solid black;
     width: 315px;
     height: 50px;
-	padding: 4px 7px;
+    padding: 4px 7px;
     outline: 0;
     margin-bottom: 24px;
 }
 
-textarea:focus {
-	border-color: #339933;
-}
-
 .gender-box {
-    background-color: #0563af;
+    background-color: black;
     color: white;
     padding: 12px;
     width: 200px;
@@ -90,23 +91,22 @@ textarea:focus {
 }
 
 .gender-box:active {
-    background-color: #0563af;
+    background-color: black;
     color: white;
     padding: 12px;
     width: 200px;
     border: none;
     font-size: 20px;
-    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
     -webkit-appearance: button;
     appearance: button;
     outline: none;
 }
 
 .state-box {
-    background-color: #0563af;
+    background-color: black;
     color: white;
     padding: 12px;
-    width: 580px;
+    width: 595px;
     border: none;
     font-size: 20px;
     box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
@@ -117,10 +117,10 @@ textarea:focus {
 }
 
 .state-box:active {
-    background-color: #0563af;
+    background-color: black;
     color: white;
     padding: 12px;
-    width: 580px;
+    width: 595px;
     border: none;
     font-size: 20px;
     box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);

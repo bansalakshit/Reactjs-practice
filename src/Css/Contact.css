@@ -1,0 +1,123 @@
+.p-1{
+    position: absolute;
+    font-size: 55px;
+    color: black;
+    top: 14%;
+    margin-left: 90px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.address{
+    position: absolute;
+    top: 28%;
+    left: 5%;
+}
+.epabx{
+    position: absolute;
+    top: 40.5%;
+    left: 5%;
+}
+.email{
+    position: absolute;
+    top: 53%;
+    left: 5%;
+}
+.fax{
+    position: absolute;
+    top: 65.5%;
+    left: 5%;
+}
+.controlroom{
+    position: absolute;
+    top: 78%;
+    left: 5%;
+}
+.common-img{
+    position: absolute;
+    width: 135px;
+    height: 87px;
+}
+.common-h1{
+    position: absolute;
+    margin-left: 150px;
+    margin-top: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+}
+.common-p{
+    margin-left: 160px;
+    margin-top: 45px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 23px;
+}
+.contact-form {
+    position: absolute;
+    top: 28%;
+    right: 45%;
+}
+.contact-from {
+    position: absolute;
+    margin-top: 2px;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.contact-from-input {
+    position: absolute;
+    margin-left: 236px;
+    font-size: 25px;
+    background: transparent;
+    border: 2px solid black;
+    width: 450px;
+    height: 45px;
+}
+.contact-subject {
+    position: absolute;
+    margin-top: 80px;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.contact-subject-input {
+    position: absolute;
+    margin-left: 103px;
+    font-size: 25px;
+    background: transparent;
+    border: 2px solid black;
+    width: 450px;
+    height: 45px;
+}
+.contact-message{
+    position: absolute;
+    margin-top: 158px;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.contact-message-input {
+    position: absolute;
+    margin-left: 75px;
+    background: transparent;
+    border: 2px solid black;
+    width: 450px;
+    font-size: 25px;
+}
+.contact-button1{
+    position: absolute;
+    margin-top: 320px;
+    margin-left: 237px;
+    color: black;
+    border: 2px solid black;
+    padding: 6px;
+    font-size: 38px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.contact-button2{
+    position: absolute;
+    margin-top: 320px;
+    margin-left: 420px;
+    color: black;
+    border: 2px solid black;
+    padding: 6px;
+    font-size: 38px;
+    font-family: Arial, Helvetica, sans-serif;
+}

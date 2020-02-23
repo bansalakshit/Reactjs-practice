@@ -1,14 +1,12 @@
-import React, { useState } from 'react'
-import { List, MenuItem } from 'semantic-ui-react'
-import { Link } from 'react-router-dom'
-import './css/Register.css'
-import * as axios from 'axios'
-
-const rootStyle = {
-    backgroundColor: '#58CCED',
-    color: 'black',
-    height: '100vh'
-}
+import React, { useState } from 'react';
+import { List, MenuItem } from 'semantic-ui-react';
+import { Link } from 'react-router-dom';
+import { Navigation } from './Navigation';
+import { Footer } from './Footer';
+import image from '../Images/page.jpg';
+import * as axios from 'axios';
+import '../Css/Page.css';
+import '../Css/Register.css';
 
 export const Register = () => {
     const [firstname, setFirstname] = useState('')
@@ -20,21 +18,32 @@ export const Register = () => {
     const [state, setState] = useState('')
 
     const handleSubmit = async () => {
-        const object = {
-            firstname,
-            lastname,
-            email,
-            contact,
-            gender,
-            adhaar,
-            state
+        let status = true;
+        if (firstname === '' || lastname === '' || email === '' || gender === '' || contact === ''
+            || adhaar === '' || state === '') status = false;
+        if (status === false) alert('Incomplete Details');
+        else {
+            const object = {
+                firstname,
+                lastname,
+                email,
+                contact,
+                gender,
+                adhaar,
+                state
+            }
+            const result = await axios.post('http://localhost:4000/', object)
+            if (result) {
+                console.log(object)
+                alert('Registered Successfully..')
+            }
         }
-        const result = await axios.post('http://localhost:4000/post', object)
-        console.log(result)
     }
 
     return (
-        <div className='register' style={rootStyle}>
+        <div>
+            <Navigation />
+            <img src={image} alt='page' className='image' />
             <div className='form'>
                 <h1> SIGN UP </h1>
                 <List>
@@ -135,11 +144,12 @@ export const Register = () => {
                     </List.Item>
                 </List>
                 <button>
-                    <Link to='/login' style={{ textDecoration: 'none' }} >
-                        <MenuItem style={{ color: '#00008b', fontSize: 35 }} onClick={handleSubmit}>Submit</MenuItem>
+                    <Link style={{ textDecoration: 'none', color: 'black' }} >
+                        <MenuItem className='form-button' onClick={handleSubmit}>Submit</MenuItem>
                     </Link>
                 </button>
             </div>
+            <Footer />
         </div>
     )
 }
