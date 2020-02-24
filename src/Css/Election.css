@@ -1,24 +1,33 @@
 .grid {
     position: absolute;
     top: 33%;
-    left: 10%;
-    font-size: 30px;
+    left: 12%;
+    font-size: 35px;
     display: grid;
-    grid-template-columns: 250px 350px 300px 300px 300px;
+    grid-template-columns: 200px 380px 300px 300px 300px;
     grid-row-gap: 65px;
+    font-family: Arial, Helvetica, sans-serif;
     padding: 10px;
 }
 
-.grid img {
+.party-image {
     width: 150px;
-    height: 100px
+    height: 100px;
+    border: solid 2px black;
+}
+.arrow-image {
+    width: 150px;
+    height: 100px;
 }
 
 .grid button {
     width: 180px;
     height: 70px;
-    background-color: blue;
+    color: white;
+    background-color: black;
+    border: solid 2px black;
     font-size: 25px;
+    margin-top: 15px;
 }
 
 .grid button link {

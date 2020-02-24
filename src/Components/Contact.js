@@ -41,7 +41,7 @@ export const Contact = () => {
             <img src={image} alt='page' className='image' />
             <p className='p-1'>Contact Us</p>
             <div className='address'>
-                <img src={address} alt='image' className='common-img' />
+                <img src={address} alt='Address' className='common-img' />
                 <h1 className='common-h1'>Address:</h1>
                 <ul>
                     <li className='common-p'>
@@ -50,7 +50,7 @@ export const Contact = () => {
                 </ul>
             </div>
             <div className='epabx'>
-                <img src={epabx} alt='image' className='common-img' />
+                <img src={epabx} alt='Epabx' className='common-img' />
                 <h1 className='common-h1'>EPABX:</h1>
                 <ul>
                     <li className='common-p'>
@@ -59,7 +59,7 @@ export const Contact = () => {
                 </ul>
             </div>
             <div className='email'>
-                <img src={email} alt='image' className='common-img' />
+                <img src={email} alt='Email' className='common-img' />
                 <h1 className='common-h1'>Email:</h1>
                 <ul>
                     <li className='common-p'>
@@ -68,7 +68,7 @@ export const Contact = () => {
                 </ul>
             </div>
             <div className='fax'>
-                <img src={fax} alt='image' className='common-img' />
+                <img src={fax} alt='Fax' className='common-img' />
                 <h1 className='common-h1'>Faxline:</h1>
                 <ul>
                     <li className='common-p'>
@@ -77,7 +77,7 @@ export const Contact = () => {
                 </ul>
             </div>
             <div className='controlroom'>
-                <img src={controlroom} alt='image' className='common-img' />
+                <img src={controlroom} alt='ControlRoom' className='common-img' />
                 <h1 className='common-h1'>Control Room:</h1>
                 <ul>
                     <li className='common-p'>

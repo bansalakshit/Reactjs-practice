@@ -6,7 +6,7 @@ import { Page } from './Page'
 import { About } from './About'
 import { Contact } from './Contact'
 import { Election } from './Election'
-import { Updatepassword } from './Updatepassword'
+import { Updatepassword } from './Update'
 
 export const Routing = () => {
     return (

@@ -12,13 +12,13 @@ export const Navigation = () => {
             <Navbar>
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav>
-                        <Nav.Link href="/" className='navlink' >Home</Nav.Link>
-                        <Nav.Link href="#features" className='navlink' >Election</Nav.Link>
+                        <Nav.Link href="/page" className='navlink' >Home</Nav.Link>
+                        <Nav.Link href="/election" className='navlink' >Election</Nav.Link>
                         <Nav.Link href="/register" className='navlink' >Sign up</Nav.Link>
                         <Nav.Link href="/login" className='navlink' >Log in</Nav.Link>
                         <Nav.Link href="#features" className='navlink' >Results</Nav.Link>
-                        <Nav.Link href="#features" className='navlink' >About</Nav.Link>
-                        <Nav.Link href="#pricing" className='navlink'>Contact Us</Nav.Link>
+                        <Nav.Link href="/about" className='navlink' >About</Nav.Link>
+                        <Nav.Link href="/contact" className='navlink'>Contact Us</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
