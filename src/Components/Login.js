@@ -24,7 +24,7 @@ export const Login = () => {
                 password
             }
             console.log(object)
-            window.open('http://localhost:3000/register', '_self');
+            window.open('http://localhost:3000/voting', '_self');
         }
     }
     return (

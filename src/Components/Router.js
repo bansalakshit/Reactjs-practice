@@ -5,6 +5,7 @@ import { Register } from './Register'
 import { Page } from './Page'
 import { About } from './About'
 import { Contact } from './Contact'
+import { Voting } from './Voting'
 import { Election } from './Election'
 import { Updatepassword } from './Update'
 
@@ -18,6 +19,7 @@ export const Routing = () => {
             <Route path='/about' component={About} />
             <Route path='/contact' component={Contact} />
             <Route path='/update' component={Updatepassword} />
+            <Route path='/voting' component={Voting} />
             <Route path='/election' component={Election} />
             {/* </Switch> */}
         </BrowserRouter>

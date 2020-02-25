@@ -112,11 +112,16 @@ export const Register = () => {
                             className='state-box'
                             required >
                             <option value=''>States</option>
+                            <option value='Andaman and Nicobar Islands'>Andaman and Nicobar Islands</option>
                             <option value='Andra Pradesh'>Andra Pradesh</option>
                             <option value='Arunachal Pradesh'>Arunachal Pradesh</option>
                             <option value='Assam'>Assam</option>
                             <option value='Bihar'>Bihar</option>
+                            <option value='Chandigarh'>Chandigarh</option>
                             <option value='Chhattisgarh'>Chhattisgarh</option>
+                            <option value='Dadra and Nagar Haveli'>Dadra and Nagar Haveli</option>
+                            <option value='Daman and Diu'>Daman and Diu</option>
+                            <option value='Delhi'>Delhi</option>
                             <option value='Goa'>Goa</option>
                             <option value='Gujarat'>Gujarat</option>
                             <option value='Haryana'>Haryana</option>
@@ -125,6 +130,7 @@ export const Register = () => {
                             <option value='Jharkhand'>Jharkhand</option>
                             <option value='Karnataka'>Karnataka</option>
                             <option value='Kerala'>Kerala</option>
+                            <option value='Lakshadweep'>Lakshadweep</option>
                             <option value='Madya Pradesh'>Madya Pradesh</option>
                             <option value='Maharashtra'>Maharashtra</option>
                             <option value='Manipur'>Manipur</option>
@@ -132,8 +138,10 @@ export const Register = () => {
                             <option value='Mizoram'>Mizoram</option>
                             <option value='Nagaland'>Nagaland</option>
                             <option value='Orissa'>Orissa</option>
-                            <option value='Others'>Punjab</option>
+                            <option value='Pondicherry'>Pondicherry</option>
+                            <option value='Punjab'>Punjab</option>
                             <option value='Rajasthan'>Rajasthan</option>
+                            <option value='Sikkim'>Sikkim</option>
                             <option value='Tamil Nadu'>Tamil Nadu</option>
                             <option value='Telagana'>Telagana</option>
                             <option value='Tripura'>Tripura</option>

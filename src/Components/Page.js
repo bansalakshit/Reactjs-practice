@@ -13,7 +13,7 @@ export const Page = () => {
             <Navigation />
             <div>
                 <img src={image} alt='page' className='image' />
-                <marquee class="marquee" direction="up" loop="" >
+                <marquee class="marquee" direction="up" >
                     <div>Election Commission (EC) is a constitutional organization that administers the election
                         process in India. The Lok Sabha , Rajya Sabha , State legislatures, and offices of President and vice President
                         elections falls under the ambit of the Election Commission.<br />
