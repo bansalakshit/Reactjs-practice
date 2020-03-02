@@ -42,8 +42,8 @@ export const Election = () => {
                     <a href="#">Meghalaya</a>
                     <a href="#">Mizoram</a>
                     <a href="#">Nagaland</a>
-                    <a href="#">Orissa</a>
-                    <a href="#">Pondicherry</a>
+                    <a href="#">Odisha</a>
+                    <a href="#">Puducherry</a>
                     <a href="#">Punjab</a>
                     <a href="#">Rajasthan</a>
                     <a href="#">Sikkim</a>

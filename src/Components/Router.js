@@ -1,5 +1,5 @@
 import React from 'react'
-import { Route, BrowserRouter } from 'react-router-dom'
+import { Route, BrowserRouter, Switch } from 'react-router-dom'
 import { Login } from './Login'
 import { Register } from './Register'
 import { Page } from './Page'
@@ -12,16 +12,16 @@ import { Updatepassword } from './Update'
 export const Routing = () => {
     return (
         <BrowserRouter>
-            {/* <Switch> */}
-            <Route path='/page' component={Page} />
-            <Route path='/register' component={Register} />
-            <Route path='/login' component={Login} />
-            <Route path='/about' component={About} />
-            <Route path='/contact' component={Contact} />
-            <Route path='/update' component={Updatepassword} />
-            <Route path='/voting' component={Voting} />
-            <Route path='/election' component={Election} />
-            {/* </Switch> */}
+            <Switch>
+                <Route path='/' exact component={Page} />
+                <Route path='/register' exact component={Register} />
+                <Route path='/login' exact component={Login} />
+                <Route path='/about' exact component={About} />
+                <Route path='/contact' exact component={Contact} />
+                <Route path='/update' exact component={Updatepassword} />
+                <Route path='/voting' exact component={Voting} />
+                <Route path='/election' exact component={Election} />
+            </Switch>
         </BrowserRouter>
     )
 } 
