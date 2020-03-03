@@ -1,0 +1,88 @@
+.results-grid {
+    position: absolute;
+    display: grid;
+    grid-template-rows: 80px 80px 80px 80px 80px 80px;
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 24%;
+    left: 20%;
+}
+
+.results-h1 {
+    position: absolute;
+    top: 15%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    left: 40%;
+}
+
+
+.results-hr-line1 {
+    position: absolute;
+    height: 2px;
+    width: 70%;
+    top: 33%;
+    left: 15%;
+    background-color: black;
+    border: 0;
+}
+
+.results-hr-line2 {
+    position: absolute;
+    height: 2px;
+    width: 70%;
+    top: 41.5%;
+    left: 15%;
+    background-color: black;
+    border: 0;
+}
+.results-hr-line3 {
+    position: absolute;
+    height: 2px;
+    width: 70%;
+    top: 50%;
+    left: 15%;
+    background-color: black;
+    border: 0;
+}
+.results-hr-line4 {
+    position: absolute;
+    height: 2px;
+    width: 70%;
+    top: 58.5%;
+    left: 15%;
+    background-color: black;
+    border: 0;
+}
+.results-hr-line5 {
+    position: absolute;
+    height: 2px;
+    width: 70%;
+    top: 67%;
+    left: 15%;
+    background-color: black;
+    border: 0;
+}
+.results-hr-line6 {
+    position: absolute;
+    height: 2px;
+    width: 70%;
+    top: 75%;
+    left: 15%;
+    background-color: black;
+    border: 0;
+}
+.results-hr-line7 {
+    position: absolute;
+    height: 2px;
+    width: 70%;
+    top: 83.5%;
+    left: 15%;
+    background-color: black;
+    border: 0;
+}
+
+.results-marquee {
+    top: 85%;
+    background-color: red;
+}

@@ -32,14 +32,14 @@ body {
 .commission h1 {
     position: absolute;
     font-family: Arial, Helvetica, sans-serif;
-    top: 16%;
+    top: 20%;
     right: 11%;
     font-size: 40px;
 }
 
 .sunil {
     position: absolute;
-    top: 27%;
+    top: 32%;
     right: 30%;
     width: 130px;
     height: 130px;
@@ -47,7 +47,7 @@ body {
 
 .sunil-desc {
     position: absolute;
-    top: 27%;
+    top: 32%;
     right: 10%;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 25px;
@@ -55,7 +55,7 @@ body {
 
 .sushil {
     position: absolute;
-    top: 45%;
+    top: 50%;
     right: 30%;
     width: 130px;
     height: 130px;
@@ -63,7 +63,7 @@ body {
 
 .sushil-desc {
     position: absolute;
-    top: 45%;
+    top: 50%;
     right: 13.5%;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 25px;
@@ -71,7 +71,7 @@ body {
 
 .ashok {
     position: absolute;
-    top: 63%;
+    top: 68%;
     right: 30%;
     width: 130px;
     height: 130px;
@@ -79,7 +79,7 @@ body {
 
 .ashok-desc {
     position: absolute;
-    top: 63%;
+    top: 68%;
     right: 13.5%;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 25px;

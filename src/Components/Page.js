@@ -1,7 +1,7 @@
 import React from 'react';
 import { Navigation } from './Navigation';
 import { Footer } from './Footer';
-import image from '../Images/page.jpg';
+import image from '../Images/homepage.jpg';
 import ashok from '../Images/ashok.jpg';
 import sunil from '../Images/sunil.jpg';
 import sushil from '../Images/sushil.jpg';

@@ -8,6 +8,7 @@ import { Contact } from './Contact'
 import { Voting } from './Voting'
 import { Election } from './Election'
 import { Updatepassword } from './Update'
+import { Results } from './Results'
 
 export const Routing = () => {
     return (
@@ -21,6 +22,7 @@ export const Routing = () => {
             <Route path='/update' component={Updatepassword} />
             <Route path='/voting' component={Voting} />
             <Route path='/election' component={Election} />
+            <Route path='/result' component={Results} />
             {/* </Switch> */}
         </BrowserRouter>
     )

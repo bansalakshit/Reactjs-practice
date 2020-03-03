@@ -24,12 +24,12 @@ export const Register = () => {
         if (status === false) alert('Incomplete Details');
         else {
             const object = {
-                firstname,
-                lastname,
-                email,
-                contact,
+                firstName: firstname,
+                lastName: lastname,
                 gender,
-                adhaar,
+                contactNumber: contact,
+                email,
+                adharId: adhaar,
                 state
             }
             const result = await axios.post('http://localhost:4000/', object)
