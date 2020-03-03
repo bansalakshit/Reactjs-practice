@@ -11,10 +11,27 @@ import '../Css/Election.css';
 
 
 export const Election = () => {
-    const [data, setData] = useState('')
+    const array = [];
+    const [data, setData] = useState(array)
 
     const handleCallback = (res) => {
-        console.log(res)
+        for (let value of res) {
+            array.push(value)
+        }
+        setData(array)
+    }
+
+    const result = () => {
+        if (data.length != 0) {
+            data.map(res => {
+                <>
+                    <p>{res.state}</p>
+                    <p>{res.from}</p>
+                    <p>{res.to}</p>
+                    <p>{res.seat}</p>
+                </>
+            })
+        }
     }
 
     return (
@@ -31,10 +48,7 @@ export const Election = () => {
                     <p>From</p>
                     <p>To</p>
                     <p>Seat</p>
-                    <p>1</p>
-                    <p>1</p>
-                    <p>1</p>
-                    <p>1</p>
+                    {result}
                 </div>
             </div>
             <div className='search'>

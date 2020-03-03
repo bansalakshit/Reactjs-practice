@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import ReactSearchBox from 'react-search-box'
+import { Northern, Central, Western, Eastern, Union, Northeastern } from '../helpers'
 
 export default class Search extends Component {
 
@@ -8,153 +9,53 @@ export default class Search extends Component {
   }
 
   handleSelect = (res) => {
-    this.props.callback(res)
+    let states;
+    if (res.key === 'Northern region') {
+      states = Northern;
+    } else if (res.key === 'Central region') {
+      states = Central;
+    } else if (res.key === 'Western region') {
+      states = Western;
+    } else if (res.key === 'Eastern region') {
+      states = Eastern;
+    } else if (res.key === 'Southern region') {
+      states = Central;
+    } else if (res.key === 'Northeastern region') {
+      states = Northeastern;
+    } else if (res.key === 'Union Territories') {
+      states = Union;
+    }
+    this.props.callback(states)
   }
 
   data1 = [
-    {     
-      key: 'Andaman and Nicobar Islands',
-      value: 'Andaman and Nicobar Islands'
-    },
-    {     
-      key: 'Andra Pradesh',
-      value: 'Andra Pradesh'
-    },
-    {     
-      key: 'Arunachal Pradesh',
-      value: 'Arunachal Pradesh'
-    },
-    {     
-      key: 'Assam',
-      value: 'Assam'
-    },
-    {     
-      key: 'Bihar',
-      value: 'Bihar'
+    {
+      key: 'Northern region',
+      value: 'Northern region'
     },
     {
-      key: 'Chandigarh',
-      value: 'Chandigarh'
+      key: 'Central region',
+      value: 'Central region'
     },
     {
-      key: 'Chhattisgarh',
-      value: 'Chhattisgarh'
+      key: 'Western region',
+      value: 'Western region'
     },
     {
-      key: 'Dadra and Nagar Haveli',
-      value: 'Dadra and Nagar Haveli'
+      key: 'Eastern region',
+      value: 'Eastern region'
     },
     {
-      key: 'Daman and Diu',
-      value: 'Daman and Diu'
+      key: 'Southern region',
+      value: 'Southern region'
     },
     {
-      key: 'Delhi',
-      value: 'Delhi'
+      key: 'Northeastern region',
+      value: 'Northeastern region'
     },
     {
-      key: 'Goa',
-      value: 'Goa'
-    },
-    {
-      key: 'Gujarat',
-      value: 'Gujarat'
-    },
-    {
-      key: 'Haryana',
-      value: 'Haryana'
-    },
-    {
-      key: 'Himachal Pradesh',
-      value: 'Himachal Pradesh'
-    },
-    {
-      key: 'Jammu and Kashmir',
-      value: 'Jammu and Kashmir'
-    },
-    {
-      key: 'Jharkhand',
-      value: 'Jharkhand'
-    },
-    {
-      key: 'Karnataka',
-      value: 'Karnataka'
-    },
-    {
-      key: 'Kerala',
-      value: 'Kerala'
-    },
-    {
-      key: 'Lakshadweep',
-      value: 'Lakshadweep'
-    },
-    {
-      key: 'Madya Pradesh',
-      value: 'Madya Pradesh'
-    },
-    {
-      key: 'Maharashtra',
-      value: 'Maharashtra'
-    },
-    {
-      key: 'Manipur',
-      value: 'Manipur'
-    },
-    {
-      key: 'Meghalaya',
-      value: 'Meghalaya'
-    },
-    {
-      key: 'Mizoram',
-      value: 'Mizoram'
-    },
-    {
-      key: 'Nagaland',
-      value: 'Nagaland'
-    },
-    {
-      key: 'Orissa',
-      value: 'Orissa'
-    },
-    {
-      key: 'Pondicherry',
-      value: 'Pondicherry'
-    },
-    {
-      key: 'Punjab',
-      value: 'Punjab'
-    },
-    {
-      key: 'Rajasthan',
-      value: 'Rajasthan'
-    },
-    {
-      key: 'Sikkim',
-      value: 'Sikkim'
-    },
-    {
-      key: 'Tamil Nadu',
-      value: 'Tamil Nadu'
-    },
-    {
-      key: 'Telagana',
-      value: 'Telagana'
-    },
-    {
-      key: 'Tripura',
-      value: 'Tripura'
-    },
-    {
-      key: 'Uttaranchal',
-      value: 'Uttaranchal'
-    },
-    {
-      key: 'Uttar Pradesh',
-      value: 'Uttar Pradesh'
-    },
-    {
-      key: 'West Bengal',
-      value: 'West Bengal'
+      key: 'Union Territories',
+      value: 'Union Territories'
     }
   ]
 

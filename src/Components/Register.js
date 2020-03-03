@@ -145,8 +145,8 @@ export const Register = () => {
                             <option value='Tamil Nadu'>Tamil Nadu</option>
                             <option value='Telagana'>Telagana</option>
                             <option value='Tripura'>Tripura</option>
-                            <option value='Uttaranchal'>Uttaranchal</option>
                             <option value='Uttar Pradesh'>Uttar Pradesh</option>
+                            <option value='Uttarakhand'>Uttarakhand</option>
                             <option value='West Bengal'>West Bengal</option>
                         </select>
                     </List.Item>

@@ -1,4 +1,4 @@
-const northern = [
+export const Northern = [
     { 
         state: 'Haryana',
         from: '30/03/2020',
@@ -31,7 +31,7 @@ const northern = [
     },
 ]
 
-const southern = [
+export const Southern = [
     { 
         state: 'Andhara Pradesh',
         from: '30/03/2020',
@@ -64,7 +64,7 @@ const southern = [
     },
 ]
 
-const Noretheastern = [
+export const Northeastern = [
     { 
         state: 'Arunachal Pradesh',
         from: '30/03/2020',
@@ -115,7 +115,7 @@ const Noretheastern = [
     },
 ]
 
-const union = [
+export const Union = [
     { 
         state: 'Andaman and Nicobar Islands',
         from: '30/03/2020',
@@ -166,7 +166,7 @@ const union = [
     },
 ]
 
-const western = [
+export const Western = [
     { 
         state: 'Gujarat',
         from: '30/03/2020',
@@ -175,12 +175,6 @@ const western = [
     },
     { 
         state: 'Goa',
-        from: '30/03/2020',
-        to: '31/03/2020',
-        seat: 20
-    },
-    { 
-        state: 'Madhya Pradesh',
         from: '30/03/2020',
         to: '31/03/2020',
         seat: 20
@@ -199,7 +193,7 @@ const western = [
     },
 ]
 
-const eastern = [
+export const Eastern = [
     { 
         state: 'Bihar',
         from: '30/03/2020',
@@ -224,4 +218,19 @@ const eastern = [
         to: '31/03/2020',
         seat: 20
     },
+]
+
+export const Central = [
+    { 
+        state: 'Chattisgarh',
+        from: '30/03/2020',
+        to: '31/03/2020',
+        seat: 20
+    },
+    { 
+        state: 'Madhya Pradesh',
+        from: '30/03/2020',
+        to: '31/03/2020',
+        seat: 20
+    }
 ]
