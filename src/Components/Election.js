@@ -12,27 +12,33 @@ import '../Css/Election.css';
 
 export const Election = () => {
     const array = [];
-    const [data, setData] = useState(array)
+    const [data, setData] = useState([])
 
     const handleCallback = (res) => {
+        console.log("chala", res);
+
         for (let value of res) {
             array.push(value)
         }
         setData(array)
+        console.log("data: ", data)
     }
 
     const result = () => {
-        if (data.length != 0) {
+        if (data.length !== 0) {
             data.map(res => {
-                <>
-                    <p>{res.state}</p>
-                    <p>{res.from}</p>
-                    <p>{res.to}</p>
-                    <p>{res.seat}</p>
-                </>
+                return (
+                    <div>
+                        <p>{res.state}</p>
+                        <p>{res.from}</p>
+                        <p>{res.to}</p>
+                        <p>{res.seat}</p>
+                    </div>
+                )
             })
         }
     }
+    console.log("aditya")
 
     return (
         <div>
@@ -42,17 +48,24 @@ export const Election = () => {
                 <h1>Upcoming Elections</h1>
                 <hr className='line1' />
                 <hr className='line2' />
-                <hr className='line3' />
-                <div className='election-grid'>
-                    <p>House/State</p>
-                    <p>From</p>
-                    <p>To</p>
-                    <p>Seat</p>
-                    {result}
-                </div>
+                {/* <hr className='line3' /> */}
+
+
+                {data.map(res => {
+                    return (
+                        <div className='election-grid'>
+                            <p>{res.state}</p>
+                            <p>{res.from}</p>
+                            <p>{res.to}</p>
+                            <p>{res.seat}</p>
+                        </div>)
+
+                }
+                )}
+
             </div>
             <div className='search'>
-                <Search callback={handleCallback} />
+                <Search callback={handleCallback} data={data} />
             </div>
             <Footer />
         </div>

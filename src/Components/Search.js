@@ -1,14 +1,9 @@
-import React, { Component } from 'react'
+import React, { useState } from 'react'
 import ReactSearchBox from 'react-search-box'
 import { Northern, Central, Western, Eastern, Union, Northeastern } from '../helpers'
 
-export default class Search extends Component {
-
-  state = {
-    value: ''
-  }
-
-  handleSelect = (res) => {
+export default function Search(props) {
+  const handleSelect = (res) => {
     let states;
     if (res.key === 'Northern region') {
       states = Northern;
@@ -25,10 +20,10 @@ export default class Search extends Component {
     } else if (res.key === 'Union Territories') {
       states = Union;
     }
-    this.props.callback(states)
+    props.callback(states)
   }
 
-  data1 = [
+  const data1 = [
     {
       key: 'Northern region',
       value: 'Northern region'
@@ -59,16 +54,16 @@ export default class Search extends Component {
     }
   ]
 
-  render() {
-    return (
-      <ReactSearchBox
-        placeholder="Search here.."
-        data={this.data1}
-        inputBoxHeight='50px'
-        inputBoxFontSize='20px'
-        inputBoxBorderColor='black'
-        onSelect={this.handleSelect}
-      />
-    )
-  }
+
+  return (
+    <ReactSearchBox
+      placeholder="Search here.."
+      data={data1}
+      inputBoxHeight='50px'
+      inputBoxFontSize='20px'
+      inputBoxBorderColor='black'
+      onSelect={handleSelect}
+    />
+  )
+
 }
