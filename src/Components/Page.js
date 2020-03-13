@@ -1,7 +1,7 @@
 import React from 'react';
 import { Navigation } from './Navigation';
 import { Footer } from './Footer';
-import image from '../Images/homepage.jpg';
+import image from '../Images/page.jpg';
 import ashok from '../Images/ashok.jpg';
 import sunil from '../Images/sunil.jpg';
 import sushil from '../Images/sushil.jpg';
@@ -13,7 +13,7 @@ export const Page = () => {
             <Navigation />
             <div>
                 <img src={image} alt='page' className='image' />
-                <marquee class="marquee" direction="up" >
+                <marquee className="marquee" direction="up" >
                     <div>Election Commission (EC) is a constitutional organization that administers the election
                         process in India. The Lok Sabha , Rajya Sabha , State legislatures, and offices of President and vice President
                         elections falls under the ambit of the Election Commission.<br />

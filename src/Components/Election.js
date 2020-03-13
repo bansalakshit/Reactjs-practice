@@ -22,15 +22,15 @@ export const Election = () => {
     }
 
     const result = () => {
-        if (data.length != 0) {
-            data.map(res => {
+        if (data.length !== 0) {
+            data.map(res =>
                 <>
                     <p>{res.state}</p>
                     <p>{res.from}</p>
                     <p>{res.to}</p>
                     <p>{res.seat}</p>
                 </>
-            })
+            )
         }
     }
 
@@ -48,7 +48,7 @@ export const Election = () => {
                     <p>From</p>
                     <p>To</p>
                     <p>Seat</p>
-                    {result}
+                    {result()}
                 </div>
             </div>
             <div className='search'>

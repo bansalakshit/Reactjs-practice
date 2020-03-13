@@ -9,6 +9,7 @@ import { Voting } from './Voting'
 import { Election } from './Election'
 import { Updatepassword } from './Update'
 import { Results } from './Results'
+import { Result } from './Result'
 
 export const Routing = () => {
     return (
@@ -23,6 +24,7 @@ export const Routing = () => {
                 <Route path='/voting' exact component={Voting} />
                 <Route path='/election' exact component={Election} />
                 <Route path='/results' exact component={Results} />
+                <Route path='/result' exact component={Result} />
             </Switch>
         </BrowserRouter>
     )

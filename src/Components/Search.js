@@ -1,6 +1,6 @@
-import React, { Component } from 'react'
-import ReactSearchBox from 'react-search-box'
-import { Northern, Central, Western, Eastern, Union, Northeastern } from '../helpers'
+import React, { Component } from 'react';
+import ReactSearchBox from 'react-search-box';
+import { Northern, Central, Western, Eastern, Union, Northeastern } from '../helpers';
 
 export default class Search extends Component {
 
