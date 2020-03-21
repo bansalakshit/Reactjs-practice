@@ -4,6 +4,7 @@ import { Navigation } from './Navigation';
 import { Footer } from './Footer';
 import { Link } from 'react-router-dom';
 import image from '../Images/page.jpg';
+import * as axios from 'axios';
 import '../Css/Page.css';
 import '../Css/Register.css';
 import '../Css/Login.css';
@@ -13,7 +14,7 @@ export const Login = () => {
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
 
-    const handleSubmit = () => {
+    const handleSubmit = async() => {
         let status = true;
         if (voterId === '' || email === '' || password === '') status = false;
         if (status === false) alert('Incomplete Details');
@@ -23,8 +24,17 @@ export const Login = () => {
                 email,
                 password
             }
-            console.log(object)
-            window.open('http://localhost:3000/voting', '_self');
+            await axios.post('http://localhost:3002/voting/login', object)
+                .then(res => {
+                    if (res.status === 200) {
+                        console.log(object)
+                        window.open('http://localhost:3000/voting', '_self');
+                    }
+                })
+                .catch(err => {
+                    console.log(err)
+                    alert('Incorrect Details..')
+                })
         }
     }
     return (

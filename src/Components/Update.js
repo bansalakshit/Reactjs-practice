@@ -4,6 +4,7 @@ import { Footer } from './Footer';
 import { List, MenuItem } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
 import image from '../Images/page.jpg'
+import * as axios from 'axios';
 import '../Css/Page.css';
 import '../Css/Navigation.css';
 import '../Css/Register.css';
@@ -14,18 +15,27 @@ export const Updatepassword = () => {
     const [current, setCurrent] = useState('')
     const [newPass, setNewPass] = useState('')
 
-    const handleSubmit = () => {
+    const handleSubmit = async() => {
         let status = true;
         if (email === '' || current === '' || newPass === '') status = false;
         if (status === false) alert('Incomplete Details');
         else {
             const object = {
                 email,
-                current,
-                newPass
+                password: current,
+                newPassword: newPass
             }
-            console.log(object)
-            alert('Password updated Successfully..')
+            await axios.post('http://localhost:3002/voting/password', object)
+                .then(res => {
+                    if (res.status === 200) {
+                        console.log(object)
+                        alert('Password Updated Successfully..')
+                    }
+                })
+                .catch(err => {
+                    console.log(err)
+                    alert(err)
+                })
             // window.open('http://localhost:3000/register', '_self');
         }
     }

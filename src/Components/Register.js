@@ -17,7 +17,21 @@ export const Register = () => {
     const [adhaar, setAdhaar] = useState('')
     const [state, setState] = useState('')
 
-    const handleSubmit = async () => {
+    const handleApi = async(object) => {
+        await axios.post('http://localhost:3002/voting/user', object)
+            .then(res => {
+                if (res.status === 200) {
+                    console.log(object)
+                    alert('Registered Successfully..')
+                }
+            })
+            .catch(err => {
+                console.log(err.message)
+                alert(err)
+            })
+    }
+
+    const handleSubmit = async() => {
         let status = true;
         if (firstname === '' || lastname === '' || email === '' || gender === '' || contact === ''
             || adhaar === '' || state === '') status = false;
@@ -32,11 +46,25 @@ export const Register = () => {
                 adharId: adhaar,
                 state
             }
-            const result = await axios.post('http://localhost:4000/', object)
-            if (result) {
-                console.log(object)
-                alert('Registered Successfully..')
-            }
+            await axios.get('http://localhost:3002/voting/getUsers')
+                .then(async response => {
+                    if (response.data.length !== 0) {
+                        await response.data.filter(res => {
+                            if (res.email === object.email) {
+                                console.log(res.email)
+                                alert('Error: Email already exists..');
+                            } else if (res.contactNumber === object.contactNumber) {
+                                console.log(res.contactNumber)
+                                alert('Error: Contact No. already exists..')
+                            } else if (res.adharId === object.adharId) {
+                                console.log(res.adharId)
+                                alert('Error: Adhaar Id already exists..')
+                            } else {
+                                handleApi(object);
+                            }
+                        })
+                    } else handleApi(object);
+                })
         }
     }
 
