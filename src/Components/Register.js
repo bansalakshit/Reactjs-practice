@@ -17,7 +17,7 @@ export const Register = () => {
     const [adhaar, setAdhaar] = useState('')
     const [state, setState] = useState('')
 
-    const handleApi = async(object) => {
+    const handleApi = async (object) => {
         await axios.post('http://localhost:3002/voting/user', object)
             .then(res => {
                 if (res.status === 200) {
@@ -31,12 +31,13 @@ export const Register = () => {
             })
     }
 
-    const handleSubmit = async() => {
+    const handleSubmit = async () => {
         let status = true;
         if (firstname === '' || lastname === '' || email === '' || gender === '' || contact === ''
             || adhaar === '' || state === '') status = false;
         if (status === false) alert('Incomplete Details');
         else {
+            if (firstname.length >= 6) return (false)
             const object = {
                 firstName: firstname,
                 lastName: lastname,

@@ -9,6 +9,7 @@ import epabx from '../Images/telephone.png'
 import email from '../Images/email.png'
 import fax from '../Images/fax.jpg'
 import controlroom from '../Images/controlroom.jpg'
+import * as axios from 'axios';
 import '../Css/Page.css'
 import '../Css/Contact.css'
 
@@ -16,7 +17,7 @@ export const Contact = () => {
     const [from, setFrom] = useState('')
     const [subject, setSubject] = useState('')
     const [message, setMessage] = useState('')
-    const handleSubmit = () => {
+    const handleSubmit = async () => {
         let status = true;
         if (from === '' || subject === '' || message === '') status = false;
         if (status === false) alert('Incomplete Details');
@@ -26,8 +27,17 @@ export const Contact = () => {
                 subject,
                 message
             }
-            console.log(object)
-            alert('Your information has been submitted successfully..')
+            await axios.post('http://localhost:3002/voting/contact', object)
+                .then(res => {
+                    if (res.status === 200) {
+                        console.log(object)
+                        alert('Your information has been submitted successfully..')
+                    }
+                })
+                .catch(err => {
+                    console.log(err)
+                    alert(err)
+                })
         }
     }
     const handleCancel = () => {

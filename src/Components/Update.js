@@ -15,7 +15,7 @@ export const Updatepassword = () => {
     const [current, setCurrent] = useState('')
     const [newPass, setNewPass] = useState('')
 
-    const handleSubmit = async() => {
+    const handleSubmit = async () => {
         let status = true;
         if (email === '' || current === '' || newPass === '') status = false;
         if (status === false) alert('Incomplete Details');
@@ -36,7 +36,6 @@ export const Updatepassword = () => {
                     console.log(err)
                     alert(err)
                 })
-            // window.open('http://localhost:3000/register', '_self');
         }
     }
     return (

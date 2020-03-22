@@ -22,7 +22,7 @@ export const Election = () => {
         console.log("chala", res);
 
         for (let i = 0; i < res.length + 1; i++) {
-            if (i == 0) {
+            if (i === 0) {
                 array.push(obj)
             } else {
                 array.push(res[i - 1])
