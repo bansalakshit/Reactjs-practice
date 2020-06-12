@@ -1,16 +1,10 @@
 .insta {
     position: absolute;
     margin-top: 15px;
-    margin-left: 85%;
-    width: 42px;
-}
-.fb {
-    position: absolute;
-    margin-top: 15px;
     margin-left: 88.5%;
     width: 42px;
 }
-.twitter {
+.fb {
     position: absolute;
     margin-top: 15px;
     margin-left: 92%;

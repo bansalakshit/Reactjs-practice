@@ -36,8 +36,8 @@ export const Register = () => {
         if (firstname === '' || lastname === '' || email === '' || gender === '' || contact === ''
             || adhaar === '' || state === '') status = false;
         if (status === false) alert('Incomplete Details');
+        else if (adhaar.length !== 12) alert('Adhaar length should be equal to 12.')
         else {
-            if (firstname.length >= 6) return (false)
             const object = {
                 firstName: firstname,
                 lastName: lastname,
@@ -50,7 +50,7 @@ export const Register = () => {
             await axios.get('http://localhost:3002/voting/getUsers')
                 .then(async response => {
                     if (response.data.length !== 0) {
-                        await response.data.filter(res => {
+                        await response.data.forEach(res => {
                             if (res.email === object.email) {
                                 console.log(res.email)
                                 alert('Error: Email already exists..');

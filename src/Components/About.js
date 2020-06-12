@@ -21,7 +21,7 @@ export const About = () => {
             the principles enshrined in the Constitution, Electoral Laws and System.<br />
             The Constitution of India has vested in the Election Commission of India the superintendence, direction and control of the
             entire process for conduct of elections to Parliament and Legislature of every State and to the offices of President and
-            Vice-President of India. <Link style={{ textDecoration: 'none', color: 'black' }} onClick={handleClick}>Read more...</Link></p> 
+            Vice-President of India. <Link style={{ textDecoration: 'none', color: 'black' }} onClick={handleClick}>Read more</Link></p> 
             <Footer />
         </div>
     )

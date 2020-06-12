@@ -6,10 +6,9 @@ import { Page } from './Page'
 import { About } from './About'
 import { Contact } from './Contact'
 import { Voting } from './Voting'
-import { Election } from './Election'
+import { Elections } from './Elections'
 import { Updatepassword } from './Update'
 import { Results } from './Results'
-import { Result } from './Result'
 
 export const Routing = () => {
     return (
@@ -21,10 +20,9 @@ export const Routing = () => {
                 <Route path='/about' exact component={About} />
                 <Route path='/contact' exact component={Contact} />
                 <Route path='/update' exact component={Updatepassword} />
-                <Route path='/voting' exact component={Voting} />
-                <Route path='/election' exact component={Election} />
+                {/* <Route path='/voting' exact component={Voting} /> */}
+                <Route path='/election' exact component={Elections} />
                 <Route path='/results' exact component={Results} />
-                <Route path='/result' exact component={Result} />
             </Switch>
         </BrowserRouter>
     )
